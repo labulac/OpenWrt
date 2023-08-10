@@ -45,6 +45,8 @@ jobs:
       run: |
         MSG="
         打包时间：${{ env.DATE }}
+        ${{ secrets.TELEGRAM_TOKEN }}
+        ${{ secrets.TELEGRAM_TO }}
         OpenWrt 更新信息：${{ env.useVersionInfo }}
         ${{ env.PRODUCT_NAME }} 打包中...
         "
